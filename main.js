@@ -16,7 +16,9 @@ for (const element of toggle) {
   })
 }
 
-/* quando clicar em um item do menu, esconder o menu */
+menu && menu.addEventListener('click', () => nav.classList.remove('show'))
+
+
 
 /* mudar o header da página quando der scroll */
 const header = document.querySelector('#header')
@@ -32,21 +34,7 @@ function changeHeaderWhenScroll() {
   }
 }
 
-/* Testimonials carousel slider swiper */
-const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  pagination: {
-    el: '.swiper-pagination'
-  },
-  mousewheel: true,
-  keyboard: true,
-  breakpoints: {
-    767: {
-      slidesPerView: 2,
-      setWrapperSize: true
-    }
-  }
-})
+
 
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
@@ -58,8 +46,10 @@ const scrollReveal = ScrollReveal({
 
 scrollReveal.reveal(
   `#home .image, #home .text,
+  #swiper header,
   #about .image, #about .text,
   #services header, #services .card,
+  #project header, 
   #team header, 
   #contact .text, #contact .links,
   footer .brand, footer .social
@@ -102,3 +92,38 @@ function activateMenuAtCurrentSection() {
     }
   }
 }
+
+
+
+
+/* swiper */
+
+
+var swiper = new Swiper('.mySwiper', {
+  loop: true,
+ 
+  centeredSlides: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    1000:{
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  
+  }
+
+})
+
+
+

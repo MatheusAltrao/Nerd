@@ -6,19 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nerd & Cia</title>
 
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="favicon_package_v0.16/android-chrome-192x192.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon_package_v0.16/android-chrome-512x512.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon_package_v0.16/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon_package_v0.16/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon_package_v0.16/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon_package_v0.16/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon_package_v0.16/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon_package_v0.16/safari-pinned-tab.svg"
+      type="image/x-icon"
+    />
+
     <!-- Icones -->
     <link rel="stylesheet" href="assets/style.css" />
 
-    <link rel="stylesheet" href="icons-services/style.css" />
-
     <!-- slider -->
 
+    <link rel="stylesheet" href="./css/glide.core.min.css" />
+    <link rel="stylesheet" href="./css/glide.theme.min.css" />
+
+    <!-- swiper -->
     <link
       rel="stylesheet"
-      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/glide.core.min.css" />
-    <link rel="stylesheet" href="css/glide.theme.min.css" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
@@ -34,14 +76,14 @@
   <body>
     <header id="header">
       <nav class="container">
-        <a class="logo" href="#">Nerd<span>Cia</span>.</a>
+        <a class="logo" href="#">Nerd<span>&Cia</span>.</a>
         <!-- menu -->
-        <div class="menu">
+        <div class="menu" id="menu">
           <ul class="grid">
             <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#swiper">Empresa</a></li>
             <li><a class="title" href="#about">Sobre</a></li>
             <li><a class="title" href="#services">Serviços</a></li>
-            <li><a class="title" href="#project">Projetos</a></li>
             <li><a class="title" href="#team">Equipe</a></li>
             <li><a class="title" href="#contact">Contato</a></li>
           </ul>
@@ -52,9 +94,8 @@
       </nav>
     </header>
 
-   
     <main>
-       <!-- home -->
+      <!-- home -->
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
@@ -63,54 +104,83 @@
             alt= />
           </div>
           <div class="text">
-            <h2 class="title">NerdCia análises e soluções em tecnologia</h2>
+            <h2 class="title">Nerd&Cia assistência técnica em Três Lagoas</h2>
             <p>
-              Somos uma empresa que atua no mercado de tecnologia, buscando
-              sempre a excelência no que faz.
+              Somos uma empresa que atua no mercado de tecnologia em Três
+              Lagoas, buscando sempre a excelência no que faz.
             </p>
             <a
+              href="https://api.whatsapp.com/send?phone=556791846083&text=Olá,20preciso da sua ajuda"
               class="button"
               target="_blank"
-              href="https://api.whatsapp.com/send?phone=556791846083&text=Olá,preciso da sua ajuda"
-              >Entrar em contato</a
+              ><i class="icon-whatsapp"></i> Entrar em contato</a
             >
           </div>
         </div>
       </section>
+
+      <div class="divider-2"></div>
+
+      <!-- Swiper -->
+      <section class="section" id="swiper">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Nosso local de trabalho</h2>
+            <p class="subtitle">
+              A nossa sede é localiza em Três Lagoas, incentivar a organização
+              no ambiente de trabalho é essencial para que todos os
+              colaboradores consigam cumprir com suas tarefas.
+            </p>
+          </header>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/trabalho1.JPG" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/trabalho2.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/trabalho3.jpeg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/trabalho4.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
       <!-- About -->
+
       <div class="divider-1"></div>
 
       <section class="section" id="about">
         <div class="container grid">
           <div class="image">
-            <img
-              src="logo/logo2.svg"
-              alt=""
-            />
+            <img src="logo/logo2.svg" alt="" />
           </div>
           <div class="text">
             <header>
               <h2 class="title">Sobre nós</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                quia, nostrum tenetur eveniet incidunt, ad quod deserunt
-                perferendis nam nisi corrupti totam esse? Nam adipisci amet
-                dolorem quae quaerat non.
+                A <strong>Nerd&Cia </strong> acredita que com a assistência
+                técnica junto com a tecnologia de maneira correta e segura,
+                proporcionam melhores resultados e gerando oportunidades.
               </p>
 
               <br />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                dignissimos a atque reiciendis, modi velit! Unde harum in
-                tempore velit dolorem amet est voluptas adipisci ea? Quia
-                sapiente illum culpa!
+                Através da nossa variedade de serviços, oferecemos
+                <strong>soluções</strong> personalizadas de Tecnologia da
+                Informação que se encaixam nas <strong>necessidades</strong> do
+                dia a dia, seja na sua empresa ou na sua vida pessoal.
               </p>
               <br />
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-                adipisci dolor nulla aspernatur odit sequi fugiat veniam
-                voluptas nihil, suscipit quasi sed omnis temporibus laborum
-                expedita, accusantium delectus. Ullam, ipsa.
+                Nos esforçamos ao máximo para fazer nosso trabalho da melhor
+                maneira possível, sempre com muita
+                <strong>transparência </strong> e <strong>segurança</strong>.
               </p>
             </header>
           </div>
@@ -125,20 +195,20 @@
           <header>
             <h2 class="title">Serviços</h2>
             <p class="subtitle">
-              A <strong>NerdCia </strong> é a soluções para todos seus
-              problemas com Informatica, Rede de Computadores e Smartphone.
+              A <strong>Nerd&Cia </strong> é a soluções para todos seus
+              problemas com Informática, Rede de Computadores e Smartphone.
               Temos serviços de qualidade e garantia a seu dispor. Entre em
               contato conosco e confira!
             </p>
           </header>
           <div class="cards grid">
             <div class="card">
-              <i>
+              <i class="icon-www">
                 <svg
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="150"
-                  height="150"
+                  width="60"
+                  height="60"
                   viewBox="0 0 512 512"
                 >
                   <title></title>
@@ -149,14 +219,37 @@
                 </svg>
               </i>
               <h3 class="title">Computadores</h3>
+              <p>
+                Temos manutenção de computadores e notebooks, formatamos, backup
+                de todos os arquivos , limpeza e troca dos periféricos.
+              </p>
+              <a class="card-link" target="_blank" href="computer.html"
+                >Ver Mais
+                <i>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 768 768"
+                  >
+                    <title></title>
+                    <g id="icomoon-ignore"></g>
+                    <path
+                      d="M361.376 182.624l169.376 169.376h-370.752c-17.664 0-32 14.336-32 32s14.336 32 32 32h370.752l-169.376 169.376c-12.512 12.512-12.512 32.768 0 45.248s32.768 12.512 45.248 0l224-224c2.944-2.944 5.312-6.464 6.944-10.368 3.232-7.84 3.232-16.672 0-24.512-1.568-3.776-3.872-7.296-6.944-10.368l-224-224c-12.512-12.512-32.768-12.512-45.248 0s-12.512 32.768 0 45.248z"
+                    ></path>
+                  </svg>
+                </i>
+              </a>
             </div>
+
             <div class="card">
-              <i>
+              <i class="icon-www">
                 <svg
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="150"
-                  height="150"
+                  width="60"
+                  height="60"
                   viewBox="0 0 768 768"
                 >
                   <title></title>
@@ -167,25 +260,269 @@
                 </svg>
               </i>
               <h3 class="title">Celular</h3>
+              <p>
+                Trabalhamos com manutenção de todas as marcas e modelos de
+                celulares, incluindo toda a linha de Smartphones, iPhones e
+                Tablets.
+              </p>
+
+              <a class="card-link" target="_blank" href="computer.html#phone"
+                >Ver Mais
+                <i>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 768 768"
+                  >
+                    <title></title>
+                    <g id="icomoon-ignore"></g>
+                    <path
+                      d="M361.376 182.624l169.376 169.376h-370.752c-17.664 0-32 14.336-32 32s14.336 32 32 32h370.752l-169.376 169.376c-12.512 12.512-12.512 32.768 0 45.248s32.768 12.512 45.248 0l224-224c2.944-2.944 5.312-6.464 6.944-10.368 3.232-7.84 3.232-16.672 0-24.512-1.568-3.776-3.872-7.296-6.944-10.368l-224-224c-12.512-12.512-32.768-12.512-45.248 0s-12.512 32.768 0 45.248z"
+                    ></path>
+                  </svg>
+                </i>
+              </a>
             </div>
+
             <div class="card">
-              <i>
+              <i class="icon-www">
                 <svg
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="150"
-                  height="150"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 480 448"
+                >
+                  <title></title>
+                  <g id="icomoon-ignore"></g>
+                  <path
+                    fill="#000"
+                    d="M208 272v-32c0-4.5-3.5-8-8-8h-48v-48c0-4.5-3.5-8-8-8h-32c-4.5 0-8 3.5-8 8v48h-48c-4.5 0-8 3.5-8 8v32c0 4.5 3.5 8 8 8h48v48c0 4.5 3.5 8 8 8h32c4.5 0 8-3.5 8-8v-48h48c4.5 0 8-3.5 8-8zM352 288c0-17.75-14.25-32-32-32s-32 14.25-32 32 14.25 32 32 32 32-14.25 32-32zM416 224c0-17.75-14.25-32-32-32s-32 14.25-32 32 14.25 32 32 32 32-14.25 32-32zM480 256c0 70.75-57.25 128-128 128-32.5 0-62-12.25-84.5-32h-55c-22.5 19.75-52 32-84.5 32-70.75 0-128-57.25-128-128s57.25-128 128-128h224c70.75 0 128 57.25 128 128z"
+                  ></path>
+                </svg>
+              </i>
+
+              <h3 class="title">Console</h3>
+              <p>
+                Aqui na Nerd&Cia damos importância na manutenção como forma de
+                previnir defeitos no console, fazemos limpezas e trocamos a
+                pasta térmica.
+              </p>
+
+              <a class="card-link" target="_blank" href="computer.html#console"
+                >Ver Mais
+                <i>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 768 768"
+                  >
+                    <title></title>
+                    <g id="icomoon-ignore"></g>
+                    <path
+                      d="M361.376 182.624l169.376 169.376h-370.752c-17.664 0-32 14.336-32 32s14.336 32 32 32h370.752l-169.376 169.376c-12.512 12.512-12.512 32.768 0 45.248s32.768 12.512 45.248 0l224-224c2.944-2.944 5.312-6.464 6.944-10.368 3.232-7.84 3.232-16.672 0-24.512-1.568-3.776-3.872-7.296-6.944-10.368l-224-224c-12.512-12.512-32.768-12.512-45.248 0s-12.512 32.768 0 45.248z"
+                    ></path>
+                  </svg>
+                </i>
+              </a>
+            </div>
+            <div class="card">
+              <i class="icon-www-2">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 432.996 432.996"
+                  width="23"
+                  height="23"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  enable-background="new 0 0 432.996 432.996"
+                >
+                  <g>
+                    <path
+                      d="m425.496,135.998h-96.496v-72.5c0-4.142-3.358-7.5-7.5-7.5h-314c-4.142,0-7.5,3.358-7.5,7.5v226c0,4.142 3.358,7.5 7.5,7.5h96.496v72.5c0,4.142 3.358,7.5 7.5,7.5h314c4.142,0 7.5-3.358 7.5-7.5v-226c0-4.142-3.358-7.5-7.5-7.5zm-7.5,44.295h-299v-29.295h299v29.295zm-103.996-109.295v29.295h-299v-29.295h299zm-299,211v-166.705h299v20.705h-202.504c-4.142,0-7.5,3.358-7.5,7.5v138.5h-88.996zm103.996-86.705h90.622v166.705h-90.622v-166.705zm105.622,166.705v-166.705h193.378v166.705h-193.378z"
+                    />
+                    <path
+                      d="m134.52,173.147c1.98,0 3.91-0.8 5.31-2.2 1.39-1.39 2.19-3.33 2.19-5.3 0-1.98-0.8-3.91-2.19-5.3-1.4-1.4-3.33-2.2-5.31-2.2-1.97,0-3.91,0.8-5.3,2.2-1.4,1.39-2.2,3.32-2.2,5.3 0,1.97 0.8,3.91 2.2,5.3 1.399,1.4 3.329,2.2 5.3,2.2z"
+                    />
+                    <path
+                      d="m153.089,173.147c1.98,0 3.91-0.8 5.31-2.2 1.39-1.39 2.19-3.33 2.19-5.3s-0.8-3.91-2.19-5.31c-1.4-1.39-3.33-2.19-5.31-2.19-1.97,0-3.9,0.8-5.3,2.19-1.39,1.4-2.19,3.34-2.19,5.31s0.8,3.91 2.19,5.3c1.4,1.4 3.33,2.2 5.3,2.2z"
+                    />
+                    <path
+                      d="m171.669,173.147c1.97,0 3.9-0.8 5.3-2.2 1.4-1.39 2.2-3.33 2.2-5.3 0-1.98-0.8-3.91-2.2-5.31-1.4-1.39-3.33-2.19-5.3-2.19-1.98,0-3.91,0.8-5.31,2.19-1.39,1.4-2.19,3.34-2.19,5.31s0.8,3.91 2.19,5.3c1.4,1.4 3.33,2.2 5.31,2.2z"
+                    />
+                    <path
+                      d="m140.307,225.703h48c4.142,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-48c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5 7.5,7.5z"
+                    />
+                    <path
+                      d="m188.307,237.703h-48c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5 7.5,7.5h48c4.142,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+                    />
+                    <path
+                      d="m188.307,264.703h-48c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5 7.5,7.5h48c4.142,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+                    />
+                    <path
+                      d="m357,210.703h-112.693c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5 7.5,7.5h112.693c4.142,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+                    />
+                    <path
+                      d="m357,237.703h-112.693c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5 7.5,7.5h112.693c4.142,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+                    />
+                    <path
+                      d="m357,264.703h-112.693c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5 7.5,7.5h112.693c4.142,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+                    />
+                    <path
+                      d="m30.52,93.147c1.98,0 3.91-0.8 5.31-2.2 1.39-1.4 2.19-3.33 2.19-5.3s-0.8-3.91-2.19-5.3c-1.4-1.4-3.33-2.2-5.31-2.2-1.97,0-3.9,0.8-5.3,2.2-1.4,1.39-2.2,3.32-2.2,5.3 0,1.97 0.8,3.91 2.2,5.3 1.399,1.4 3.329,2.2 5.3,2.2z"
+                    />
+                    <path
+                      d="m49.089,93.147c1.98,0 3.91-0.8 5.31-2.2 1.39-1.39 2.19-3.33 2.19-5.3 0-1.98-0.8-3.91-2.19-5.3-1.4-1.4-3.33-2.2-5.31-2.2-1.97,0-3.9,0.8-5.3,2.2-1.39,1.39-2.19,3.32-2.19,5.3 0,1.97 0.8,3.91 2.19,5.3 1.4,1.4 3.33,2.2 5.3,2.2z"
+                    />
+                    <path
+                      d="m67.669,93.147c1.97,0 3.9-0.8 5.3-2.2s2.2-3.33 2.2-5.3-0.8-3.91-2.2-5.3c-1.39-1.4-3.33-2.2-5.3-2.2-1.98,0-3.91,0.8-5.31,2.2-1.39,1.39-2.19,3.32-2.19,5.3 0,1.97 0.8,3.91 2.19,5.3 1.4,1.4 3.33,2.2 5.31,2.2z"
+                    />
+                    <path
+                      d="m84.307,130.703h-48c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5 7.5,7.5h48c4.142,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+                    />
+                    <path
+                      d="m84.307,157.703h-48c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5 7.5,7.5h48c4.142,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+                    />
+                    <path
+                      d="m84.307,184.703h-48c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5 7.5,7.5h48c4.142,0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+                    />
+                  </g>
+                </svg>
+              </i>
+
+              <h3 class="title">Criamos Site</h3>
+              <p>
+                Criação de sites sendo responsivos, personalizados,
+                profissionais e com as últimas tecnologias lançadas,tendo o
+                melhor para a sua empresa.
+              </p>
+
+              <a
+                class="card-link"
+                target="_blank"
+                href="table-price.html#function"
+                >Ver Mais
+                <i>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 768 768"
+                  >
+                    <title></title>
+                    <g id="icomoon-ignore"></g>
+                    <path
+                      d="M361.376 182.624l169.376 169.376h-370.752c-17.664 0-32 14.336-32 32s14.336 32 32 32h370.752l-169.376 169.376c-12.512 12.512-12.512 32.768 0 45.248s32.768 12.512 45.248 0l224-224c2.944-2.944 5.312-6.464 6.944-10.368 3.232-7.84 3.232-16.672 0-24.512-1.568-3.776-3.872-7.296-6.944-10.368l-224-224c-12.512-12.512-32.768-12.512-45.248 0s-12.512 32.768 0 45.248z"
+                    ></path>
+                  </svg>
+                </i>
+              </a>
+            </div>
+            <div class="card">
+              <i class="icon-www">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 439.48 439.48"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  enable-background="new 0 0 439.48 439.48"
+                >
+                  <g>
+                    <path
+                      d="m146.566,141.888h65.674v9h-47.5c-4.143,0-7.5,3.358-7.5,7.5s3.357,7.5 7.5,7.5h110c4.143,0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-47.5v-9h65.674c12.311,0 22.326-10.016 22.326-22.326v-94.348c0-12.311-10.016-22.326-22.326-22.326h-146.348c-12.311,0-22.326,10.015-22.326,22.326v94.348c-1.42109e-14,12.31 10.016,22.326 22.326,22.326zm146.348-15h-146.348c-4.04,0-7.326-3.287-7.326-7.326v-5.197h161v5.197c0,4.039-3.286,7.326-7.326,7.326zm-146.348-109h146.348c4.04-3.55271e-15 7.326,3.286 7.326,7.326v74.151h-161v-74.151c0-4.04 3.286-7.326 7.326-7.326z"
+                    />
+                    <path
+                      d="m56.5,257.976c4.143,0 7.5-3.358 7.5-7.5v-19.693h148.24v19.693c0,4.142 3.357,7.5 7.5,7.5s7.5-3.358 7.5-7.5v-19.693h148.24v19.693c0,4.142 3.357,7.5 7.5,7.5s7.5-3.358 7.5-7.5v-27.193c0-4.142-3.357-7.5-7.5-7.5h-155.74v-34.498c0-4.142-3.357-7.5-7.5-7.5s-7.5,3.358-7.5,7.5v34.498h-155.74c-4.143,0-7.5,3.358-7.5,7.5v27.193c0,4.142 3.357,7.5 7.5,7.5z"
+                    />
+                    <path
+                      d="m90.645,271.593h-68.29c-12.327,0-22.355,10.029-22.355,22.355v120.289c0,12.327 10.028,22.355 22.355,22.355h68.289c12.327,0 22.355-10.029 22.355-22.355v-120.289c0.001-12.326-10.027-22.355-22.354-22.355zm-68.29,15h68.289c4.056,0 7.355,3.3 7.355,7.355v103.645h-82.999v-103.645c0-4.055 3.3-7.355 7.355-7.355zm68.29,135h-68.29c-4.056,0-7.355-3.3-7.355-7.355v-1.645h83v1.645c0,4.055-3.3,7.355-7.355,7.355z"
+                    />
+                    <path
+                      d="m253.885,271.593h-68.289c-12.327,0-22.355,10.029-22.355,22.355v120.289c0,12.327 10.028,22.355 22.355,22.355h68.289c12.327,0 22.355-10.029 22.355-22.355v-120.289c0-12.326-10.028-22.355-22.355-22.355zm-68.289,15h68.289c4.056,0 7.355,3.3 7.355,7.355v103.645h-83v-103.645c0-4.055 3.3-7.355 7.356-7.355zm68.289,135h-68.289c-4.056,0-7.355-3.3-7.355-7.355v-1.645h83v1.645c-0.001,4.055-3.301,7.355-7.356,7.355z"
+                    />
+                    <path
+                      d="m417.125,271.593h-68.289c-12.327,0-22.355,10.029-22.355,22.355v120.289c0,12.327 10.028,22.355 22.355,22.355h68.289c12.327,0 22.355-10.029 22.355-22.355v-120.289c0-12.326-10.028-22.355-22.355-22.355zm-68.289,15h68.289c4.056,0 7.355,3.3 7.355,7.355v103.645h-83v-103.645c0-4.055 3.3-7.355 7.356-7.355zm68.289,135h-68.289c-4.056,0-7.355-3.3-7.355-7.355v-1.645h83v1.645c-0.001,4.055-3.3,7.355-7.356,7.355z"
+                    />
+                  </g>
+                </svg>
+              </i>
+
+              <h3 class="title">Hospedagem</h3>
+              <p>
+                A hospedagem está incluso nos nossos planos mensais.Conheça os
+                planos e escolha a melhor opção para ter a sua página na web.
+              </p>
+
+              <a
+                class="card-link"
+                target="_blank"
+                href="table-price.html#function"
+                >Ver Mais
+                <i>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 768 768"
+                  >
+                    <title></title>
+                    <g id="icomoon-ignore"></g>
+                    <path
+                      d="M361.376 182.624l169.376 169.376h-370.752c-17.664 0-32 14.336-32 32s14.336 32 32 32h370.752l-169.376 169.376c-12.512 12.512-12.512 32.768 0 45.248s32.768 12.512 45.248 0l224-224c2.944-2.944 5.312-6.464 6.944-10.368 3.232-7.84 3.232-16.672 0-24.512-1.568-3.776-3.872-7.296-6.944-10.368l-224-224c-12.512-12.512-32.768-12.512-45.248 0s-12.512 32.768 0 45.248z"
+                    ></path>
+                  </svg>
+                </i>
+              </a>
+            </div>
+
+            <div class="card">
+              <i class="icon-www">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
                   viewBox="0 0 1024 1024"
                 >
                   <title></title>
                   <g id="icomoon-ignore"></g>
                   <path
                     fill="#000"
-                    d="M175.019 897.408c89.984 78.848 208 126.592 336.981 126.592 129.109 0 246.997-47.744 337.152-126.592 80.085-81.579-184.149-371.584-337.152-487.125-152.832 115.541-417.237 405.547-336.981 487.125zM651.179 282.752c106.667 126.336 319.317 440.021 259.243 550.912 70.997-87.851 113.579-199.595 113.579-321.493 0-142.507-58.24-271.445-152.32-364.203 0 0-1.152-0.939-3.499-1.792-2.688-0.939-6.485-1.92-11.989-1.92-25.259 0-84.693 18.517-205.013 138.496zM155.904 146.176c-2.432 0.853-3.499 1.749-3.669 1.792-93.995 92.757-152.235 221.696-152.235 364.203 0 121.771 42.581 233.515 113.536 321.408-59.776-111.147 152.704-424.576 259.413-550.827-120.32-120.021-179.883-138.453-205.056-138.453-5.589 0-9.515 0.896-11.989 1.963zM512 151.509c0 0-125.653-73.515-223.787-77.013-38.528-1.408-62.037 12.587-64.896 14.464 91.52-61.397 188.8-88.96 288-88.96h0.683c99.584 0 196.48 27.563 288.683 88.96-2.901-1.963-26.24-15.872-64.853-14.464-98.133 3.499-223.829 76.757-223.829 76.757z"
+                    d="M512 0c-194.432 0-352 157.568-352 352 0 128.992 118.016 265.696 160.992 385.76 64.096 179.040 56.992 286.24 191.008 286.24 136 0 126.88-106.688 191.008-285.504 43.104-120.32 160.992-258.496 160.992-386.496 0-194.432-157.632-352-352-352zM594.944 869.632l-158.656 19.808c-5.664-16.384-11.744-35.552-19.136-60.576-0.096-0.32-0.224-0.672-0.288-0.992l198.016-24.736c-2.816 9.44-5.824 19.36-8.448 28.256-4.192 14.368-7.936 26.848-11.488 38.24zM407.552 797.056c-5.824-19.264-12.384-39.552-19.68-61.056h248.512c-3.936 11.488-7.872 23.008-11.264 33.888l-217.568 27.168zM512 960c-32.416 0-47.328-3.744-63.904-40l135.616-16.992c-19.648 52.928-33.952 56.992-71.712 56.992zM661.504 672h-298.656c-15.936-34.56-35.072-69.12-53.952-102.944-41.76-74.72-84.896-152-84.896-217.056 0-158.816 129.184-288 288-288s288 129.184 288 288c0 64.576-43.2 142.272-84.992 217.44-18.688 33.696-37.696 68.192-53.504 102.56zM512 160c8.8 0 16 7.168 16 16s-7.168 16-16 16c-88.224 0-160 71.776-160 160 0 8.832-7.168 16-16 16s-16-7.168-16-16c0-105.888 86.112-192 192-192z"
                   ></path>
                 </svg>
               </i>
-              <h3 class="title">Console</h3>
+
+              <h3 class="title">Planos</h3>
+              <p>
+                Temos 3 tipos de planos sendo eles Gold, Platinum e o
+                Diamond,cada um tem suas características e preço.
+              </p>
+
+              <a class="card-link" target="_blank" href="table-price.html#table"
+                >Ver Mais
+                <i>
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 768 768"
+                  >
+                    <title></title>
+                    <g id="icomoon-ignore"></g>
+                    <path
+                      d="M361.376 182.624l169.376 169.376h-370.752c-17.664 0-32 14.336-32 32s14.336 32 32 32h370.752l-169.376 169.376c-12.512 12.512-12.512 32.768 0 45.248s32.768 12.512 45.248 0l224-224c2.944-2.944 5.312-6.464 6.944-10.368 3.232-7.84 3.232-16.672 0-24.512-1.568-3.776-3.872-7.296-6.944-10.368l-224-224c-12.512-12.512-32.768-12.512-45.248 0s-12.512 32.768 0 45.248z"
+                    ></path>
+                  </svg>
+                </i>
+              </a>
             </div>
           </div>
         </div>
@@ -193,52 +530,19 @@
 
       <div class="divider-1"></div>
 
-       <!-- project -->
-       <section class="section" id="project"> 
-         <div class="container grid">
-        <header>
-          <h2 class="title">Projetos</h2>
-          <p class="subtitle">Todos os nossos projetos</p>
-        </header>
-        <div class="cards grid">
-          <div class="card">
-           <img src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGRvY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="projeto">
-            <h3 class="title">DoctorCare
-            </h3>
-           <a href="#"><button>Ver projeto</button></a>
-          </div>
-          <div class="card">
-            <img src="https://q3m9s2m7.rocketcdn.me/wp-content/uploads/2021/01/Banco-Omni-1.png" alt="projeto">
-            <h3 class="title">Omni
-            </h3>
-            <a href="#"><button>Ver projeto</button></a>
-          </div>
-          <div class="card">
-            <img src="https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="projeto">
-            <h3 class="title">Bravus</h3>
-            <a href="#"><button>Ver projeto</button></a>
-          </div>
-        </div>
-      </div> 
-     </section>
-       
-       
-     
-       <div class="divider-2"></div>
-
       <!-- team -->
 
       <section class="section" id="team">
         <header>
           <div class="container grid">
-          <h2 class="title">Equipe</h2>
-          <p class="subtitle">
-            O sucesso de uma empresa é o resultado do trabalho em
-            <strong> equipe</strong> .
-          </p>
+            <h2 class="title">Equipe</h2>
+            <p class="subtitle">
+              O sucesso de uma empresa é o resultado do trabalho em Equipe.
+            </p>
+          </div>
         </header>
         <div class="shop-container">
-          <div class="container ">
+          <div class="container">
             <div class="glide">
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -252,11 +556,8 @@
                     <img src="images/rafael.jpg" alt="" />
                   </li>
                   <li class="glide__slide">
-                    <img
-                      src="images/henrique.jpeg"
-                    />
+                    <img src="images/henrique.jpeg" />
                   </li>
-                 
                 </ul>
               </div>
               <div class="glide__arrows" data-glide-el="controls">
@@ -305,63 +606,68 @@
           </div>
           <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
         </div>
-       </div>
+
         <script>
           const config = {
-            type: 'carousel',
+            type: "carousel",
             perView: 2,
             breakpoints: {
               700: {
-                perView: 1
-              }
-            }
-          }
-          new Glide('.glide', config).mount()
+                perView: 1,
+              },
+            },
+          };
+          new Glide(".glide", config).mount();
         </script>
       </section>
-      <div class="divider-1"></div>
+      <div class="divider-2"></div>
 
       <!-- Contact-->
-      <section class="section" id="contact">
-        <div class="container grid">
-          <div class="text">
-            <h2 class="title">Entre em contato conosco!</h2>
-            <p>
-              Entre em contato com a
-              <a class="logo" href="#">Nerd<span>Cia</span></a>
-              queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
-            </p>
-            <a
-              href="https://api.whatsapp.com/send?phone=556791846083&text=Olá,preciso da sua ajuda"
-              class="button"
-              target="_blank"
-              ><i class="icon-whatsapp"></i> Entrar em contato</a
-            >
-          </div>
-
-          <div class="links">
-            <ul class="grid">
-              <li><i class="icon-phone"></i> (67)9184-6083</li>
-              <li>
-                <i class="icon-map-pin"></i> Rua Bruno Garcia, 862, 79602040
-                Três Lagoas, MS
-              </li>
-              <li>
-                <i class="icon-clock"></i> De Segunda a Sexta 8:00 às 18:00
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
       <div class="divider-1"></div>
     </main>
 
+    <section class="section" id="contact">
+      <div class="container grid">
+        <div class="text">
+          <h2 class="title">Entre em contato conosco!</h2>
+          <p>
+            Entre em contato com a
+            <a class="logo" href="#">Nerd<span>&Cia</span></a>
+            queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
+          </p>
+          <a
+            href="https://api.whatsapp.com/send?phone=556791846083&text=Olá,preciso da sua ajuda"
+            class="button"
+            target="_blank"
+            ><i class="icon-whatsapp"></i> Entrar em contato</a
+          >
+        </div>
+
+        <div class="links">
+          <ul class="grid">
+            <li><i class="icon-phone"></i> (67)9184-6083</li>
+            <li>
+              <i class="icon-map-pin"></i> Rua Bruno Garcia, 862<br />CEP:
+              79602040<br />
+              Três Lagoas, MS
+            </li>
+            <li>
+              <i class="icon-clock"></i> De Segunda a Sexta 8:00 às 18:00,Sáb às
+              8:00 ao 12:00.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-2"></div>
+
     <footer class="section">
       <div class="container grid">
         <div class="brand">
-          <a class="logo logo-alt" href="#home">Nerd<span>Cia</span>.</a>
-          <p>©2022 NerdCia</p>
+          <a class="logo logo-alt" href="#home">Nerd<span>&Cia</span>.</a>
+          <p>©2022 Nerd&Cia</p>
           <p>
             Created by
             <a
@@ -374,10 +680,10 @@
 
         <div class="social">
           <a href="https://www.instagram.com/nerd_cia/" target="_blank">
-            <i class="icon-instagram"> NerdCia</i>
+            <i class="icon-instagram"> Nerd&Cia</i>
           </a>
           <a href="https://www.facebook.com/nerdcia.ux/" target="_blank">
-            <i class="icon-facebook">NerdCia</i>
+            <i class="icon-facebook">Nerd&Cia</i>
           </a>
         </div>
       </div>
