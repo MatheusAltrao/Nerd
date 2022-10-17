@@ -36,8 +36,8 @@ img {
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
 
-  --title-font: "Poppins", sans-serif;
-  --body--font: "DM Sans", sans-serif;
+  --title-font: 'Poppins', sans-serif;
+  --body--font: 'DM Sans', sans-serif;
 }
 
 /*===  BASE ============================ */
@@ -68,7 +68,7 @@ body {
   padding: 0 2rem;
   border-radius: 0.25rem;
   font: 500 1rem var(--body--font);
-  transition: background 0.3s;
+  transition: all 0.3s ease;
 }
 
 .button:hover {
@@ -136,6 +136,10 @@ body {
   z-index: 100;
   background-color: var(--body-color);
   width: 100%;
+
+  /*   background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px); */
 }
 
 #header.scroll {
@@ -184,7 +188,7 @@ nav ul li a.active {
 }
 
 nav ul li a::after {
-  content: "";
+  content: '';
   width: 0%;
   height: 2px;
   background: var(--base-color);
@@ -276,7 +280,7 @@ nav.show div.icon-close {
 }
 
 #home .image::before {
-  content: "";
+  content: '';
   height: 100%;
   width: 100%;
   background: var(--base-color-second);
@@ -350,10 +354,6 @@ nav.show div.icon-close {
   object-fit: cover;
   margin-bottom: 2rem;
   border-radius: 1rem;
-}
-
-.teste {
-  color: red;
 }
 
 /*====  ABOUT ============================ */
@@ -453,7 +453,7 @@ nav.show div.icon-close {
   filter: brightness(1.5);
 }
 
-/* Equipe */
+/* ===================== Equipe ===================== */
 
 #team .glide img {
   height: 30rem;
@@ -471,7 +471,7 @@ nav.show div.icon-close {
   fill: #fff;
 }
 
-/* Project */
+/* ===================== Project  =====================*/
 
 #project img {
   border: 1px solid var(--base-color);
@@ -494,7 +494,7 @@ nav.show div.icon-close {
   cursor: pointer;
 }
 
-/* Contact */
+/* ===================== Contact ======================*/
 #contact {
   background-color: var(--body-dark-color);
 }
@@ -605,12 +605,11 @@ nav.show .menu .select {
   z-index: 1000;
 }
 
-#computer ol li:hover{
-  color: #a1a1a1;
+.list-group-item:hover {
+  background-color: #cbcbcb;
 }
 
 /*================= table-price ========================== */
-
 #table {
   background-color: #f5f5f5;
 }
@@ -624,21 +623,18 @@ nav.show .menu .select {
 }
 
 .info {
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: flex-start;
   transition: all 0.3s ease;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-}
-
-.info:hover {
-  transform: scale(1.12);
+  min-width: 290px;
+  width: 100%;
 }
 
 .info i {
   color: var(--base-color);
 }
-
 .wrapper-title {
   display: flex;
   justify-content: center;
@@ -674,16 +670,14 @@ nav.show .menu .select {
   transition: all 0.3s ease;
 }
 
-.wrapper .table:hover {
-  filter: brightness(1.2);
-}
 .table .price-section {
   display: flex;
   justify-content: center;
 }
+
 .table .price-area {
-  height: 120px;
-  width: 120px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   padding: 2px;
 }
@@ -693,7 +687,8 @@ nav.show .menu .select {
   border-radius: 50%;
   border: 3px solid #fff;
   line-height: 117px;
-  text-align: center;
+  display: flex;
+  align-items: center;
   color: #fff;
   position: relative;
 }
@@ -701,13 +696,22 @@ nav.show .menu .select {
   font-size: 25px;
   font-weight: 400;
   position: absolute;
-  top: -10px;
-  left: 8px;
+  bottom: 50px;
+  left: 20px;
+}
+
+.price-area .inner-area .number {
+  font-size: 25px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
 }
 .price-area .inner-area .price {
   font-size: 45px;
   font-weight: 500;
-  margin-left: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .table .package-name {
   width: 100%;
@@ -745,95 +749,65 @@ nav.show .menu .select {
   fill: crimson;
 }
 
-.table .btn button {
+.table .btn {
   width: 100%;
   display: flex;
   margin-top: 35px;
   justify-content: center;
-  align-items:center;
 }
-
 .table .btn button {
-  width: 100%;
+  width: 80%;
   height: 50px;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
   border: none;
   outline: none;
-  border-radius: 12px;
+  border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .table .btn button:hover {
   border-radius: 5px;
 }
-.basic .features li::selection {
-  background: crimson;
-}
+
 .basic ::selection,
 .basic .price-area,
-.basic .inner-area {
-  background: crimson;
-}
-.basic .btn button {
-  border: 2px solid crimson;
-  background: #fff;
-  color: crimson;
-}
-.basic .btn button:hover {
-  background: crimson;
-  color: #fff;
-}
+.basic .inner-area,
+.basic .btn button,
 .premium ::selection,
 .premium .price-area,
 .premium .inner-area,
-.premium .btn button {
+.premium .btn button,
+.ultimate ::selection,
+.ultimate .price-area,
+.ultimate .inner-area,
+.ultimate .btn button {
   background: crimson;
 }
+
 .premium .btn button:hover {
   background: crimson;
 }
-.ultimate ::selection,
-.ultimate .price-area,
-.ultimate .inner-area {
-  background: crimson;
-}
-.ultimate .btn button {
-  border: 2px solid crimson;
-  color: crimson;
-  background: #fff;
-}
-.ultimate .btn button:hover {
-  background: crimson;
-  color: #fff;
-}
 
-.basic .package-name {
-  color: crimson;
-}
-
-.premium,
-.ultimate .package-name {
-  background: crimson;
-}
 .premium .package-name {
   background: crimson;
 }
-.ultimate .package-name {
-  background: crimson;
-}
-.basic .package-name::before {
-  content: "Gold";
-  color: crimson;
-}
-.premium .package-name::before {
-  content: "Platinum";
+
+.premium:nth-child(1) .package-name::before {
+  content: 'Gold';
   font-size: 24px;
   color: crimson;
 }
-.ultimate .package-name::before {
-  content: "Diamond";
+
+.premium:nth-child(2) .package-name::before {
+  content: 'Platinum';
+  font-size: 24px;
+  color: crimson;
+}
+
+.premium:nth-child(3) .package-name::before {
+  content: 'Diamond';
   font-size: 24px;
   color: crimson;
 }
@@ -846,16 +820,7 @@ nav.show .menu .select {
   left: -10px;
   overflow: hidden;
 }
-.table .ribbon::before,
-.table .ribbon::after {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  display: block;
-  border: 7px solid #4606ac;
-  border-top-color: transparent;
-  border-left-color: transparent;
-}
+
 .table .ribbon::before {
   top: 0px;
   right: 15px;
@@ -878,7 +843,6 @@ nav.show .menu .select {
   text-transform: uppercase;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 }
-
 .budget {
   height: 50vh;
   background-color: var(--base-color);
@@ -893,9 +857,13 @@ nav.show .menu .select {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  font-size: 14px;
+  padding: 0 1rem;
 }
 
 .budget .title {
+  font-size: 18px;
   color: #fff;
 }
 
@@ -1018,7 +986,7 @@ nav.show .menu .select {
 }
 
 /*========= MEDIA QUERIES =========*/
-/* extra large devices: 1200 > */
+
 @media (min-width: 1200px) {
   /* reusable classes */
   .container {
@@ -1185,7 +1153,7 @@ nav.show .menu .select {
   .info {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding: 0.5 rem;
+    padding: 0.5rem;
   }
 
   .budget .subtitle {
